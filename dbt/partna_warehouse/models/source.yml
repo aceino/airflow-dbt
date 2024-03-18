@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: partna_transactions
-    database: airflow
+    database: airflow  
     schema: public  
     tables:
       - name: transaction_data_wide_table

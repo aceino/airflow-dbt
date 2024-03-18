@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_user
+    description: "All unique user that partna has"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table, pointing uniquely to each user."
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "name of user"
