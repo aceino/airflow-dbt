@@ -4,7 +4,8 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 
 CURRENT_DIR = os.getcwd()
-DBT_DIR = CURRENT_DIR + '/dbt/partna_datawarehouse'
+
+DBT_DIR = CURRENT_DIR + "/dags/dbt/partna_warehouse"
 
 dag = DAG(
     "dbt_dag_basic",
